@@ -1,0 +1,16 @@
+app:
+  name: dbc-agibank-app
+
+spring:
+  application:
+    name: dbc-agibank-app
+  resources:
+    add-mappings: true
+
+server:
+  port: ${port:8181}
+
+logging:
+  level:
+    org.springframework.cloud.config.client.ConfigServicePropertySourceLocator: WARN
+
